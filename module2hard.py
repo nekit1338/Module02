@@ -28,8 +28,7 @@ def get_password():
     for i in list_pairs:
         for j in i:
             single_list.append(j)
-    """Преобразовываем список элементов в единую строку с использованием генератора списков и метода join(), 
-    используя пустую строку ("") в качестве разделителя"""
+    """Формируем строку из элементов списка single_list"""
     result = "".join([str(i) for i in single_list])
     return print(int(result))
 
